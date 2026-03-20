@@ -1,0 +1,322 @@
+:root {
+    --bg-dark: #111111;
+    --box-dark: #393B3D;
+    --input-dark: #222222;
+    --text-white: #FFFFFF;
+    --text-gray: #B8B8B8;
+    --blue-link: #00A2FF;
+    --border-gray: #4B4D4F;
+    --btn-hover: #4B4D4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Background Effects */
+.background-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Assets/Roblox Background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 90%);
+    z-index: -1;
+}
+
+/* Navbar */
+#header {
+    background-color: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    border-bottom: 1px solid var(--box-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rbx-navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-container .logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    background-color: #111111;
+    border: 1px solid var(--border-gray);
+    border-radius: 5px;
+    padding: 8px 10px 8px 35px;
+    color: var(--text-white);
+    width: 240px;
+    font-size: 14px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    width: 18px;
+    color: var(--text-gray);
+}
+
+.nav-signup,
+.nav-login {
+    background: transparent;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-signup {
+    border: none;
+}
+
+.nav-login:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login-box {
+    background-color: var(--box-dark);
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.login-header {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border-gray);
+    color: var(--text-white);
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--blue-link);
+}
+
+.btn-login {
+    width: 100%;
+    background-color: var(--bg-dark);
+    border: 1px solid #fffdfd;
+    color: #ffffff9f;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-login:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.forgot-link {
+    display: inline-block;
+    color: var(--blue-link);
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.divider {
+    margin: 25px 0;
+    border-top: 1px solid var(--border-gray);
+}
+
+.btn-alt {
+    width: 100%;
+    background-color: #393B3D;
+    border: none;
+    color: var(--text-white);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+
+.btn-alt:hover {
+    background-color: #4B4D4F;
+}
+
+.signup-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.signup-footer a {
+    color: var(--blue-link);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Footer */
+#footer-container {
+    background-color: var(--bg-dark);
+    padding: 40px 20px 60px;
+    border-top: 1px solid var(--box-dark);
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.1s;
+}
+
+.footer-links a:hover {
+    color: var(--text-white);
+}
+
+.privacy-icon {
+    background-color: #00A2FF;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 12px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-box {
+    animation: fadeIn 0.6s ease-out;
+}

